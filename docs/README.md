@@ -42,6 +42,7 @@ not a directory listing.
 
 | Doc | Audience | Description |
 | --- | -------- | ----------- |
+| [feature-flags.md](feature-flags.md) | Operator | Every runtime feature flag: what it gates, its default, where it's checked, the admin toggle API, caching/propagation across replicas, and the audit trail |
 | [runbook.md](runbook.md) | Operator | Incident → action runbook: indexer lag, wrong tiers, webhook failures, RPC/IPFS outages, DB slowness, reindex/replay, dead-letter drain, cache flush, circuit breaker, pause/unpause |
 | [performance.md](performance.md) | Contributor | Latency budgets for key endpoints and how to run the load-test suites |
 | [soroban-sandbox-e2e.md](soroban-sandbox-e2e.md) | Contributor | Local + CI Soroban sandbox that deploys all five contracts and runs live backend E2E (#1117) |

@@ -601,6 +601,10 @@ curl -X POST "http://localhost:4000/api/admin/actions/cm123456789/approve" \
 
 When `ADMIN_THRESHOLD = 1`, operations execute immediately without creating pending actions. The response format and audit logging remain consistent.
 
+### Feature Flags
+
+`GET /api/admin/feature-flags`, `PUT /api/admin/feature-flags` and `PUT /api/admin/feature-flags/:name` list and toggle runtime feature flags (admin role required). See [docs/feature-flags.md](docs/feature-flags.md) for every flag, its default, what it gates, and how caching affects propagation across replicas.
+
 ---
 
 ## Server-Sent Events (`GET /api/events/stream`) (#1019)
