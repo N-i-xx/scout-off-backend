@@ -847,6 +847,8 @@ Recommended metrics to track:
 - Event indexer lag (gap between latest on-chain event and last indexed event, exposed as `indexer_ledger_lag` on `GET /metrics`)
 - SQLite file size growth
 
+See [docs/metrics.md](docs/metrics.md) for every metric exported on `GET /metrics`, scrape configuration, and suggested alert rules.
+
 For what to do when these signals go wrong — indexer lag, stale tiers, missing webhooks, RPC/IPFS outages, DB slowness, plus reindex/replay, dead-letter drain, cache flush, circuit-breaker, and pause/unpause procedures — see the [Operator Runbook](docs/runbook.md).
 
 ### Docker Compose Healthcheck
